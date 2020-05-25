@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "env-cmd -f ./config/prod.env node ./dist/index.js",
+		"start": "node ./dist/index.js",
 		"heroku-postbuild": "rm -rf dist && babel src -d dist --copy-files",
 		"dev": "env-cmd -f ./config/dev.env nodemon src --ext js,graphql --exec babel-node",
 		"build": "rm -rf dist && babel src -d dist --copy-files",
